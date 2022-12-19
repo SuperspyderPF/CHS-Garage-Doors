@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary-color: #fff;
+  --secondary-color: #111;
+  --tirtary-color: #96151d;
+  --forth-color: #717878;
+}
+
+::selection {
+  color: var(--primary-color);
+  background: var(--tirtary-color);
+}
+
+body {
+  background: var(--primary-color);
+  color: var(--secondary-color);
+  line-height: 30px;
+  font-family: 'Poppins', sans-serif;
+}
+
+a:active{
+  background-color: transparent;
+}
+
+i {
+  margin: 0 5px;
+}
+
+.container {
+  width: 1100px;
+  margin: auto;
+}
+
+/* UTILITY CLASSES */
+
+.remove_list_style {
+list-style: none;
+}
+
+.remove_link_style {
+text-decoration: none;
+color: inherit;
+}
+
+.trans2s {
+transition: .2s ease-in-out;
+}
+
+.btn {
+  padding: 18px 30px;
+  background: var(--secondary-color);
+  color: var(--primary-color);
+  outline: none;
+  border: none;
+  font-size: medium;
+  border-radius: 30px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  cursor: pointer;
+  letter-spacing: 2px;
+}
+
+.btn:hover {
+  background: var(--forth-color);
+}
+
+.btn-white {
+  padding: 18px 30px;
+  background: var(--primary-color);
+  color: var(--secondary-color);
+  outline: none;
+  border: none;
+  font-size: medium;
+  border-radius: 30px;
+  cursor: pointer;
+  letter-spacing: 2px;
+  transition: background-color .2s ease-in-out;
+}
+
+.btn-white:hover {
+  background: rgb(225, 225, 225);
+}
+
+.btn-red {
+  padding: 18px 30px;
+  background: #c20029;
+  color: var(--primary-color);
+  outline: none;
+  border: none;
+  font-size: medium;
+  border-radius: 30px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  cursor: pointer;
+  letter-spacing: 2px;
+}
+
+.btn-red:hover {
+  background: #640016;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ------------------- MEDIA QUERRIES ----------------------- */
+
+@media only screen and (max-width: 1120px) {
+  .container {
+    width: 1000px;
+  }
+  #service-cta img {
+    width: 550px;
+  }
+  #copyright {
+    width: 330px;
+  }
+  #tabs ul li {
+    padding: 20px 10px;
+}
+}

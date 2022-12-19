@@ -1,0 +1,51 @@
+#cta-section {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)), url(/src/images/img-cta.jpg);
+    height: 450px;
+    background-size: cover;
+    color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#cta-content {
+    font-size: 1.2rem;
+    margin-left: 10%;
+}
+
+#cta-content p {
+    margin: 50px 0;
+    width: 581px;
+}
+
+@media only screen and (max-width: 750px) {
+    #cta-content {
+        margin-left: 2%;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    #cta-content h1 {
+        font-size: 2rem;
+        line-height: 40px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #cta-content p {
+        width: auto;
+    }
+    #cta-section {
+        background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), url(/src/images/small-img-cta.jpg);
+        background-size: cover;
+    }
+}
+
+@media only screen and (max-width: 410px) {
+    #cta-content p {
+        font-size: 1rem;
+    }
+    #cta-content p {
+        margin: 25px 0;
+    }
+}
